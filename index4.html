@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Product Management System</title>
+  <style>
+     *{
+    margin: 0;
+    padding: 0;
+}
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      text-align: center;
+      padding: 20px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"], input[type="button"] {
+      margin: 5px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Product Management System</h1> 
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="price" placeholder="Price">
+    <input type="text" id="qty" placeholder="Quantity">
+    <input type="button" id="btnsave" value="Save">
+    <input type="button" value="Edit" class="edit">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="product"></tbody>
+    </table>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="script4.js"></script>
+</body>
+</html>

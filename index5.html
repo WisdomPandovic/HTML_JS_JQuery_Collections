@@ -1,0 +1,569 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	width: 60%;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.name{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.error{
+    color:red
+  }
+
+.f_name {
+    width: 100%; 
+     height: 55px;
+     margin-bottom: 20px;
+}
+
+.l_name{
+    width: 100%; 
+     height: 55px;
+}
+
+.age{
+    width: 100%;  
+    height: 55px;
+}
+
+.gender{
+    width: 100%; 
+     height: 55px;
+     margin-top: 10px;
+}
+
+.phone_no{
+    width: 300px; 
+    height: 55px;
+    margin-top: 10px;
+}
+
+.country{
+    width: 300px; 
+    height: 55px;
+    margin-top: 10px;
+}
+
+.school{
+    width: 100%; 
+    height: 55px;
+    margin-top: 10px;
+}
+
+.submit{
+    width: 30%;
+    margin: auto;
+    align-items: center;
+}
+
+.grade_level{
+    margin-top: 20px;
+}
+
+.btn_submit{
+    width: 200px; 
+    height: 40px;
+    margin: 10px;
+}
+
+@media (max-width: 427px) {
+    .error{
+        color:red
+      }
+    
+    .f_name {
+        width: 350px; 
+         height: 55px;
+    }
+    
+    .l_name{
+        width: 350px; 
+         height: 55px;
+         margin-top: 20px;
+    }
+    
+    .age{
+        width: 350px; 
+        height: 55px;
+        margin-top: 20px;
+    }
+    
+    .gender{
+        width: 350px; 
+         height: 55px;
+         margin-top: 20px;
+    }
+    
+    .phone_no{
+        width: 100%; 
+        height: 55px;
+        margin-top: 10px;
+    }
+    
+    .country{
+        width: 100%; 
+        height: 55px;
+    }
+    
+    .school{
+        width: 350px; 
+        height: 55px;
+        margin-top: 10px;
+    }
+    
+    .submit{
+        width: 200px;
+        align-items: center;
+    }
+    
+    .btn_submit{
+        width: 200px; 
+        height: 40px;
+        margin: 10px;
+    }
+
+    .grade_level{
+        font-size: 20px;
+    }
+
+    .other{
+        width: 100px;
+    }
+    
+}
+
+
+ @media (max-width: 770px) {
+    .error{
+        color:red
+      }
+    
+    .f_name {
+        width: 100%; 
+         height: 55px;
+    }
+    
+    .l_name{
+        width: 100%;  
+         height: 55px;
+         margin-top: 10px;
+    }
+    
+    .age{
+        width: 100%; 
+        height: 55px;
+    }
+    
+    .gender{
+        width: 100%;  
+         height: 55px;
+    }
+    
+    .phone_no{
+        width: 150px; 
+        height: 55px;
+        margin-top: 10px;
+    }
+    
+    .country{
+        width: 200px; 
+        height: 55px;
+    }
+    
+    .school{
+        width: 100%;  
+        height: 55px;
+        margin-top: 10px;
+    }
+    
+    .btn_submit{
+        width: 200px; 
+        height: 40px;
+        margin: 10px;
+    }
+
+    .grade_level{
+        font-size: 20px;
+    }
+    
+}
+/* @media (max-width: 1026px) {
+    .error{
+        color:red
+      }
+    
+    .f_name {
+        width: 400px; 
+         height: 55px;
+    }
+    
+    .l_name{
+        width: 400px; 
+         height: 55px;
+         margin-top: 10px;
+    }
+    
+    .age{
+        width: 300px; 
+        height: 55px;
+    }
+    
+    .gender{
+        width: 300px; 
+         height: 55px;
+    }
+    
+    .phone_no{
+        width: 250px; 
+        height: 55px;
+        margin-top: 10px;
+    }
+    
+    .country{
+        width: 250px; 
+        height: 55px;
+    }
+    
+    .school{
+        width: 500px; 
+        height: 55px;
+        margin-top: 10px;
+    }
+    
+    
+    .btn_submit{
+        width: 200px; 
+        height: 40px;
+        margin: 10px;
+    }
+
+    .grade_level{
+        font-size: 20px;
+    }
+    
+}
+
+
+@media (max-width: 357px) {
+    .error{
+        color:red
+      }
+    
+    .f_name {
+        width: 300px; 
+         height: 55px;
+    }
+    
+    .l_name{
+        width: 300px; 
+         height: 55px;
+         margin-top: 20px;
+    }
+    
+    .age{
+        width: 300px; 
+        height: 55px;
+        margin-top: 20px;
+    }
+    
+    .gender{
+        width: 300px; 
+         height: 55px;
+         margin-top: 20px;
+    }
+    
+    .phone_no{
+        width: 300px; 
+        height: 55px;
+        margin-top: 10px;
+    }
+    
+    .country{
+        width: 300px; 
+        height: 55px;
+    }
+    
+    .school{
+        width: 300px; 
+        height: 55px;
+        margin-top: 10px;
+    }
+    
+    .submit{
+        width: 200px;
+        align-items: center;
+    }
+    
+    .btn_submit{
+        width: 200px; 
+        height: 40px;
+        margin: 10px;
+    }
+
+    .grade_level{
+        font-size: 20px;
+    }
+
+    .other{
+        width: 50px;
+    }
+    
+}
+
+@media (max-width: 2560px) {
+    .error{
+        color:red
+      }
+    
+    .f_name {
+        width: 500px; 
+         height: 55px;
+    }
+    
+    .l_name{
+        width: 500px; 
+         height: 55px;
+         margin-top: 20px;
+    }
+    
+    .age{
+        width: 300px; 
+        height: 55px;
+        margin-top: 20px;
+    }
+    
+    .gender{
+        width: 300px; 
+         height: 55px;
+         margin-top: 20px;
+    }
+    
+    .phone_no{
+        width: 300px; 
+        height: 55px;
+        margin-top: 10px;
+    }
+    
+    .country{
+        width: 300px; 
+        height: 55px;
+    }
+    
+    .school{
+        width: 300px; 
+        height: 55px;
+        margin-top: 10px;
+    }
+    
+    
+    .btn_submit{
+        width: 200px; 
+        height: 40px;
+        margin: 10px;
+    }
+
+    .grade_level{
+        font-size: 20px;
+    }
+
+    .other{
+        width: 50px;
+    }
+    
+} */
+</style>
+<body>
+    <section class="desktop_view">
+        <h3>Student Scholarship Form</h3>
+        <form id="dskForm">
+            <div class="name">
+                <input type="text" placeholder="First Name" class="f_name" id="f_name" value="">
+                <div id="err_first_name" class="error"></div>
+                <input type="text" placeholder="Last Name" class="l_name" id="l_name" value="">
+                <div id="err_last_name" class="error"></div>
+            </div>
+    
+            <div><label for="">Age:</label>
+            <select name="" class="age" id="age">
+            <option value="0ne" id="eighteen">18 - 24</option>
+            <option value="two" id="twentyfive">25 - 30</option>
+            <option value="three" id="thirty">31 - 35</option>
+            <option value="four" id="thirtysix">36 - 40</option>
+            <option value="five">41 & Above</option>
+            </select></div>
+           
+            <label for="">Gender:</label>
+            <select name="" class="gender" id="gender">
+            <option value="">Male</option>
+            <option value="">Female</option>
+            </select>
+            
+            <div>
+                <!-- <label>Phone Number:</label> -->
+                <input type="" placeholder="Phone Number" name="" id="phone_no" class="phone_no">
+              <div id="err_phone_no" class="error"></div>
+    
+                <label for="">Country:</label>
+                <select name="" class="country" id="country">
+                    <option value="africa" id="africa">Country in Africa</option>
+                    <option value="asia" id="asia">Country in Asia</option>
+                    <option value="s_america" id="s_america">Country in South America</option>
+                    <option value="n_america" id="n_america">Country in North America</option>
+                    <option value="other_country" id="other_country">Other Country</option>
+                </select>
+            </div>
+    
+            <div>
+                <!-- <label>School:</label> -->
+                <div id="err_school" class="error"></div>
+                <input type="text" placeholder="School" name="" id="school" class="school">
+            </div>
+            <!-- <div id="grade">
+
+                <div>
+                    <select name="" class="grades" id="">
+                        <option value="math">Math</option>
+                    </select>
+                    <input type="text" name="math" class="grade_score"/>
+                </div>
+                <div>
+                    <select name="" class="grades" id="">
+                        <option value="english">English</option>
+                    </select>
+                    <input type="text" name="english" class="grade_score"/>
+                </div>
+                <a href='javascript:void(0);' onclick='addInput()'>Add Subject</a>
+            </div> -->
+
+            <div >
+                <h1 class="grade_level">Your grade, Maths & English Compulsory</h1>
+                <label>Mathematics</label>
+                <input type="number" name="" id="grade" class="other" placeholder="Grade">
+
+                <div><label>English Language</label>
+                <input type="number" name="" id="grade" class="other" placeholder="Grade"></div>
+
+                <div>
+                    <div><label>Other Subject:</label> </div>
+                    <input type="text" placeholder="subject">
+                    <input type="number" id="grade" class="other" placeholder="Grade">
+                    <div id="err_grade" class="error"></div>
+                    <div>
+                        <input type="text" placeholder="subject">
+                        <input type="number" id="grade" class="other" placeholder="Grade"> 
+                    </div>
+                    <div>
+                        <input type="text" placeholder="subject">
+                        <input type="number" id="grade" class="other" placeholder="Grade"> 
+                    </div>
+                    <div>
+                        <input type="text" placeholder="subject">
+                        <input type="number" id="grade" class="other" placeholder="Grade"> 
+                    </div>
+                    <div>
+                        <input type="text" placeholder="subject">
+                        <input type="number" id="grade" class="other" placeholder="Grade"> 
+                    </div>
+                    <div>
+                        <input type="text" placeholder="subject">
+                        <input type="number" id="grade" class="other" placeholder="Grade"> 
+                    </div>
+                </div>
+            </div>
+    
+            <div id="result"></div>
+            <div class="submit">
+                <!-- <div><input id="btnvalidate" type="button" value="Validate"/></div> -->
+                <button class="btn_submit" onclick="calculateGrade()" id="btn_submit">Submit</button>
+            </div>
+    
+        </form>
+    </section>
+
+
+    <!-- Mobile View -->
+
+    <!-- <section class="mobile_view">
+        <form id="mbForm">
+            <div class="mv_name">
+                <div><label for="">First Name:</label></div>
+                <input type="text" class="mvf_name" id="mvf_name" value="">
+            </div>
+    
+            <div>
+                <div><label for="">Last Name:</label></div>
+                <input type="text" class="mvl_name" id="mvl_name" value="">
+            </div>
+            
+            <div>
+                <div><label for="">Age:</label></div>
+                <select name="" class="mv_age" id="mvage">
+                    <option value="loan" id="eighteeen">18 - 24</option>
+                    <option value="" id="twofive">25 - 30</option>
+                    <option value="" id="three">30 - 35</option>
+                    <option value="" id="fourt">36 - 40</option>
+                    <option value="" id="fourone">41 & Above</option>
+                </select>
+            </div>
+             
+            <div>
+                <div><label for="">Gender:</label></div>
+                <select name="" class="mv_gender" id="mv_gender">
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                </select>
+            </div>
+    
+            <div>
+                <div><label>Phone Number:</label></div>
+                <input type="" name="" id="mv_phone_no" class="mv_phone_no">
+            </div>
+    
+            <div>
+    
+                <div><label for="">Country:</label></div>
+                <select name="" class="mv_country" id="mv_phone_no">
+                    <option value="">Country in Africa</option>
+                    <option value="">Country in Asia</option>
+                    <option value="">Country in South America</option>
+                    <option value="">Country in North America</option>
+                    <option value="">Other Country</option>
+                </select>
+            </div>
+    
+            <div>
+                <div><label>School</label></div>
+                <input type="text" name="" id="mv_school" class="mv_school">
+            </div>
+            
+    
+            <div id="result"></div>
+            <div class="mv_submit">
+               
+                <button class="btn_submit" id="mvbtn_submit">Submit</button>
+            </div>
+    
+        </form>
+    </section> -->
+
+
+
+    <script src="script5.js"></script>
+</body>
+</html>
